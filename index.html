@@ -6,18 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WeatherApp</title>
   <link rel="stylesheet" href="./Assets/css/style.css">
- 
+
 </head>
 
 <body>
-  <!-- City search button -->
-  <input type="text" class="cityName"></input>
-  <button type="button" id="cityNameButton">Search City</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">   <!-- City search button -->
+        <input type="text" class="cityName"></input>
+        <button type="button" id="cityNameButton">Search City</button>
+      </div>
+      <div class="col-md"> <!-- Current conditions -->
+        <ul>
+          <li id="cityData"></li>
+          <li id="cityData1"></li>
+          <li id="cityData2"></li>
+          <li id="cityData3"></li>
+        </ul>
+      </div>
+      <div class="col-md"> <!-- Forecast -->
+        Forecast
+      </div>
+    </div>
+  </div>
 
-  <div id="cityData"></div>
-  <div id="cityData1"></div>
-  <div id="cityData2"></div>
-  <div id="cityData3"></div>
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="./Assets/js/script.js"></script>

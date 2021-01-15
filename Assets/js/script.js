@@ -9,8 +9,13 @@ $.ajax({
     url: queryURL,
     method: "GET"
 }).then(function (response) {
-    console.log(response);
+    // function temperatureConverter(valNum) {
+    //     valNum = parseFloat(valNum);
+    //     document.getElementById("outputFahrenheit").innerHTML=((valNum-273.15)*1.8)+32;
+    //   }
+    // console.log(response);
     $("#cityData").append(response.name);
+    // $("#cityData1").append("Temperature: " + temperatureConverter());
     $("#cityData1").append("Temperature: " + response.main.temp);
     $("#cityData2").append("Humidity: " + response.main.humidity + "%");
     $("#cityData3").append("Wind: " + response.wind.speed + "mph");
