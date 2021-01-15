@@ -10,8 +10,11 @@ $.ajax({
     method: "GET"
 }).then(function (response) {
     console.log(response);
-    $("#cityData").text(response.main.humidity + "%");
-    $("#cityData").append(response.main.temp);
+    $("#cityData").append(response.name);
+    $("#cityData1").append("Temperature: " + response.main.temp);
+    $("#cityData2").append("Humidity: " + response.main.humidity + "%");
+    $("#cityData3").append("Wind: " + response.wind.speed + "mph");
+    // $("#cityData").append(JSON.stringify(response));
     
     // for (let i = 0; i < response.hits.length; i++) {
     //     var recList = response.hits[i];
